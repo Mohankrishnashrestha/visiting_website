@@ -17,7 +17,7 @@ function Header() {
                   : "text-gray-600"
               }
             >
-              logo
+              Visit Pokhara
             </NavLink>
           </div>
           <div className="hidden lg:flex gap-5 justify-between items-center p-2 text-[#3b3b3b]">
