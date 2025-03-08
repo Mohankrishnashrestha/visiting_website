@@ -142,7 +142,7 @@ function Home() {
                         {users.description}
                         <NavLink
                           className={" px-2  rounded-2xl bg-[#6494fd] "}
-                          to={"/" + users.title}
+                          to={"/home" + users.id}
                         >
                           Readmore...
                         </NavLink>
