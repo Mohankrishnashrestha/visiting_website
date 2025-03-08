@@ -12,7 +12,7 @@ function Slug() {
 
   return (
     <div className="max-w-6xl mx-auto p-5">
-      <section className="h-[90px] lg:h-[80px]"></section>
+      {/* <section className="h-[90px] lg:h-[80px]"></section>
       <h1 className="text-4xl font-bold text-center mb-5">{place.title}</h1>
       <img
         src={place.image}
@@ -28,6 +28,11 @@ function Slug() {
         >
           Back to Home
         </a>
+      </div> */}
+      <div className="bg-[#00000063] h-40 w-screen relative flex justify-center items-center">
+        <div className="absolute">
+          <h2 className="text-white text-2xl">slug</h2>
+        </div>
       </div>
     </div>
   );
