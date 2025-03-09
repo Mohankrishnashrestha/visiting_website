@@ -143,6 +143,9 @@ function Home() {
                         <NavLink
                           to={`/home/${users.id}`}
                           className="px-2 shadow rounded-2xl text-blue-500 underline"
+                          className={" px-2  rounded-2xl bg-[#6494fd] "}
+                          to={"/home/:" + users.id}
+
                         >
                           Read More
                         </NavLink>
