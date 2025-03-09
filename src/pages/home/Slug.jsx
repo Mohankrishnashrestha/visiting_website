@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useParams } from "react-router-dom";
 import data from "../../assets/data";
@@ -29,9 +28,6 @@ function Slug() {
       </div>
     </div>
   );
-function Slug() {
-  return <div className="p-50">Slug</div>;
-
 }
 
 export default Slug;
