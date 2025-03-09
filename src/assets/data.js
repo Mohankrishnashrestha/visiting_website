@@ -52,7 +52,7 @@ const data=[
     },
     {id:10,
         title:"Sarangkot",
-        description:"Sarangkot is a beautiful Hill station situated at an altitude of 1592M from the sea level which is nearby Pokhara City.....",
+        description:"Sarangkot is a beautiful Hill station situated at an altitude of 1592M from the sea ...",
         image:"/images/pokhara/Sarangkot.jpg",
     },
 ]
