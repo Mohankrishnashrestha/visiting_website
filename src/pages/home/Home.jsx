@@ -55,43 +55,8 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="max-w-6xl mx-auto lg:flex lg:justify-around p-2 ">
-          <div>
-            <h3 className="text-xl">Destination</h3>
-            <select
-              id=""
-              className="p-2 bg-[#1e9596] duration-500 text-[#dfe3fc] "
-            >
-              <option value="">Select a Destination</option>
-              <option value="option1">Fewa Lake</option>
-              <option value="option2">Begnas Lake</option>
-              <option value="option3">Santi Stupa</option>
-              <option value="option4">Barahai Temple</option>
-              <option value="option5">Bhote Koshi</option>
-            </select>
-          </div>
-
-          <div>
-            <h3 className="text-xl">Activity</h3>
-            <select
-              id=""
-              className="p-2 bg-[#1e9596] duration-500 text-[#dfe3fc]"
-            >
-              <option value="">Select a Destination</option>
-              <option value="option1">Paragliding</option>
-              <option value="option2">Swimming</option>
-              <option value="option3">boating</option>
-              <option value="option4">Rafting</option>
-              <option value="option5">Bunjee jump</option>
-            </select>
-          </div>
-          <div className="flex items-center py-[30px]">
-            <button className="py-2 px-10 bg-[#1e9596] duration-500 text-[#dfe3fc] cursor-pointer">
-              Search
-            </button>
-          </div>
-        </div>
         <div>
+          <section className="h-[50px]"></section>
           <div className="max-w-6xl mx-auto mb-20">
             <div className="w-full flex flex-col justify-center items-center gap-5">
               <h2 className="lg:text-4xl text-2xl font-bold">
@@ -142,10 +107,7 @@ function Home() {
                         {users.description}
                         <NavLink
                           to={`/home/${users.id}`}
-                          className="px-2 shadow rounded-2xl text-blue-500 underline"
-                          className={" px-2  rounded-2xl bg-[#6494fd] "}
-                          to={"/home/:" + users.id}
-
+                          className={"px-2 rounded-2xl bg-[#6494fd]"}
                         >
                           Read More
                         </NavLink>
