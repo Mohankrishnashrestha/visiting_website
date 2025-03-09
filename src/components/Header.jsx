@@ -10,14 +10,7 @@ function Header() {
         <div className="w-full shadow relative">
           <nav className="max-w-6xl mx-auto lg:flex lg:flex-row p-2 justify-between items-center">
             <div className="text-[40px]">
-              <NavLink
-                to={"/home"}
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-blue-600 font-medium  border-blue-600"
-                    : "text-gray-600"
-                }
-              >
+              <NavLink to={"/home"} className="text-blue-600">
                 Visit Pokhara
               </NavLink>
             </div>
@@ -60,7 +53,7 @@ function Header() {
                     : "text-gray-600"
                 }
               >
-                Galery
+                Gallery
               </NavLink>
             </div>
             <div className="flex gap-5 justify-between items-center p-2 text-[#3b3b3b] lg:hidden">

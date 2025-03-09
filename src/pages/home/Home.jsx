@@ -141,10 +141,10 @@ function Home() {
                       <p>
                         {users.description}
                         <NavLink
-                          className={" px-2  rounded-2xl bg-[#6494fd] "}
-                          to={"/home" + users.id}
+                          to={`/home/${users.id}`}
+                          className="px-2 shadow rounded-2xl text-blue-500 underline"
                         >
-                          Readmore...
+                          Read More
                         </NavLink>
                       </p>
                     </div>

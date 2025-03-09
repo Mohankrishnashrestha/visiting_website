@@ -8,7 +8,7 @@ function Gallery() {
 
       <div className="bg-[#00000063] h-40 w-screen relative flex justify-center items-center">
         <div className="absolute">
-          <h2 className="text-white text-2xl">Galery</h2>
+          <h2 className="text-white text-2xl">Gallery</h2>
         </div>
       </div>
 
