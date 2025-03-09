@@ -120,6 +120,14 @@ function Home() {
           </div>
         </div>
       </div>
+      <div>
+        <section className="h-[50px]"></section>
+        <div className="max-w-6xl mx-auto">
+          <h2 className="lg:text-4xl text-2xl font-bold">
+            Activity That Can Be Done In Pokhara
+          </h2>
+        </div>
+      </div>
     </div>
   );
 }
