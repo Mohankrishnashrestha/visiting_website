@@ -15,7 +15,7 @@ function Slug() {
   }
   console.log(user.image);
   return (
-    <div className="max-w-4xl mx-auto p-5">
+    <div className="max-w-6xl mx-auto p-5">
       <section className="h-[90px] lg:h-[80px]"></section>
       <div className="shadow-lg p-5 rounded-lg">
         <img
@@ -24,7 +24,7 @@ function Slug() {
           className="w-full h-full object-cover rounded transition-transform duration-300 group-hover:scale-105 group-hover:shadow-2xl"
         />
         <h1 className="text-3xl font-bold mb-4">{user.title}</h1>
-        <p className="text-lg text-gray-700">{user.description}</p>
+        <p className="text-lg text-gray-700">{user.description_main}</p>
       </div>
     </div>
   );
