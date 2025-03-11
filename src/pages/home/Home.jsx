@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import data from "../../assets/data";
 import { NavLink } from "react-router-dom";
 import activity from "../../assets/activity";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 function Home() {
   const images = [
@@ -22,7 +24,15 @@ function Home() {
     return () => clearInterval(interval);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      offset: 100, // Starts animation 100px before element is in viewport
+      once: false, // Animation repeats when scrolling up/down
+    });
 
+    AOS.refresh(); // Refresh animations after component updates
+  }, []);
   return (
     <div>
       <section className="h-[80px]" />
@@ -69,6 +79,7 @@ function Home() {
                 {data.map((users, index) => (
                   <li
                     key={index}
+                    data-aos="fade-up"
                     className="flex flex-col items-center gap-4 shadow-2xl p-5 rounded-2xl"
                   >
                     <h1 className="text-2xl hover:text-[#6494fd]">
@@ -132,6 +143,7 @@ function Home() {
               {activity.map((item, index) => (
                 <li
                   key={index}
+                  data-aos="fade-up"
                   className="shadow p-2 flex flex-col items-center gap-5 py-5 rounded-2xl"
                 >
                   <h1 className="lg:text-[20px] font-medium p-2  flex items-start ">
