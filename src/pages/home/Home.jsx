@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import data from "../../assets/data";
 import { NavLink } from "react-router-dom";
+import activity from "../../assets/activity";
 
 function Home() {
   const images = [
@@ -126,6 +127,28 @@ function Home() {
           <h2 className="lg:text-4xl text-2xl font-bold">
             Activity That Can Be Done In Pokhara
           </h2>
+          <div className="p-2">
+            <ul className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5">
+              {activity.map((item, index) => (
+                <li
+                  key={index}
+                  className="shadow p-2 flex flex-col items-center gap-5 py-5 rounded-2xl"
+                >
+                  <h1 className="lg:text-[20px] font-medium p-2  flex items-start ">
+                    {item.title}
+                  </h1>
+                  <div className="relative group w-[300px] h-[300px] overflow-hidden rounded-lg">
+                    <img
+                      src={item.image}
+                      alt=""
+                      className="w-full h-full object-cover rounded transition-transform duration-300 group-hover:scale-115 group-hover:shadow-2xl"
+                    />
+                  </div>
+                  <p className="px-4 shadow py-2">{item.description}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </div>
