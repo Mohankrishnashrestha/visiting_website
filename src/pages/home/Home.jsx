@@ -119,7 +119,7 @@ function Home() {
                         {users.description}
                         <NavLink
                           to={`/home/${users.id}`}
-                          className={"px-2 rounded-2xl bg-[#6494fd]"}
+                          className={"px-2 hover:text-blue-600 "}
                         >
                           Read More
                         </NavLink>
