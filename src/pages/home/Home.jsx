@@ -26,12 +26,12 @@ function Home() {
   }, []);
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      offset: 100, // Starts animation 100px before element is in viewport
-      once: false, // Animation repeats when scrolling up/down
+      duration: 1000,
+      offset: 100,
+      once: false,
     });
 
-    AOS.refresh(); // Refresh animations after component updates
+    AOS.refresh();
   }, []);
   return (
     <div>

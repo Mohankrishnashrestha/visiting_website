@@ -9,6 +9,9 @@ function Contact() {
           <h2 className="text-white text-2xl">Contact</h2>
         </div>
       </div>
+      <div>
+        
+      </div>
     </div>
   );
 }
