@@ -9,7 +9,7 @@ function About() {
           <h2 className="text-white text-2xl">About</h2>
         </div>
       </div>
-      <div className="max-w-6xl mx-auto text-justify p-4 shadow-2xl">
+      <div className="max-w-6xl mx-auto text-justify p-4 shadow">
         <div className="text-4xl mb-4 font-bold">Pokhara</div>
 
         <img
