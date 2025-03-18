@@ -3,11 +3,10 @@ import React from "react";
 function About() {
   return (
     <div>
-      <section className="h-[90px] lg:h-[80px]" />
-      <div className="bg-[#00000063] h-40 w-screen relative flex justify-center items-center">
-        <div className="absolute">
-          <h2 className="text-white text-2xl">About</h2>
-        </div>
+      <div className="h-50 w-full bg-gradient-to-b from-blue-600/60 to-blue-700/70 flex justify-center items-center mt-16">
+        <h2 className="text-white text-4xl font-bold uppercase tracking-wider">
+          About
+        </h2>
       </div>
       <div className="max-w-6xl mx-auto text-justify p-4 shadow">
         <div className="text-4xl mb-4 font-bold">Pokhara</div>

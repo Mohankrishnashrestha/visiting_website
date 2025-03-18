@@ -1,105 +1,118 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
+
 function Header() {
-  const [toggle, setToggle] = useState();
+  const [toggle, setToggle] = useState(false);
 
   return (
-    <div>
-      <div className="fixed bg-white w-full z-10 shadow-md">
-        <div className="w-full shadow relative">
-          <nav className="max-w-6xl mx-auto lg:flex lg:flex-row p-2 justify-between items-center">
-            <div className="text-[40px]">
-              <NavLink to={"/home"} className="text-blue-600">
-                Visit Pokhara
-              </NavLink>
-            </div>
-            <div className="hidden lg:flex gap-5 justify-between items-center p-2 text-[#3b3b3b]">
-              <NavLink
-                to={"/about"}
-                className={({ isActive }) =>
+    <header className="fixed top-0 left-0 w-full bg-white shadow-md z-10">
+      <nav className="max-w-6xl mx-auto px-4 py-3">
+        <div className="flex items-center justify-between">
+          <NavLink
+            to="/home"
+            className="text-3xl md:text-4xl text-blue-600 font-bold"
+          >
+            Visit Pokhara
+          </NavLink>
+
+          <div className="hidden lg:flex items-center space-x-8">
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                `transition-colors duration-200 ${
                   isActive
-                    ? "text-blue-600 font-medium  border-blue-600"
-                    : "text-gray-600"
-                }
-              >
-                About
-              </NavLink>
-              <NavLink
-                to={"/contact"}
-                className={({ isActive }) =>
+                    ? "text-blue-600 font-medium"
+                    : "text-gray-600 hover:text-blue-500"
+                }`
+              }
+            >
+              About
+            </NavLink>
+            <NavLink
+              to="/service"
+              className={({ isActive }) =>
+                `transition-colors duration-200 ${
                   isActive
-                    ? "text-blue-600 font-medium  border-blue-600"
-                    : "text-gray-600"
-                }
-              >
-                Contact
-              </NavLink>
-              <NavLink
-                to={"/service"}
-                className={({ isActive }) =>
+                    ? "text-blue-600 font-medium"
+                    : "text-gray-600 hover:text-blue-500"
+                }`
+              }
+            >
+              Service
+            </NavLink>
+            <NavLink
+              to="/galery"
+              className={({ isActive }) =>
+                `transition-colors duration-200 ${
                   isActive
-                    ? "text-blue-600 font-medium  border-blue-600"
-                    : "text-gray-600"
-                }
-              >
-                Service
-              </NavLink>
-              <NavLink
-                to={"/galery"}
-                className={({ isActive }) =>
+                    ? "text-blue-600 font-medium"
+                    : "text-gray-600 hover:text-blue-500"
+                }`
+              }
+            >
+              Gallery
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                `transition-colors duration-200 ${
                   isActive
-                    ? "text-blue-600 font-medium  border-blue-600"
-                    : "text-gray-600"
-                }
-              >
-                Gallery
-              </NavLink>
-            </div>
-            <div className="flex gap-5 justify-between items-center p-2 text-[#3b3b3b] lg:hidden">
-              <ul
-                className={
-                  "overflow-hidden transition-all duration-500 ease-in-out " +
-                  (toggle
-                    ? "max-h-[500px] opacity-100 "
-                    : "max-h-0 opacity-0 ") +
-                  "w-full"
-                }
-              >
-                <li className="flex justify-center p-2">
-                  <NavLink to={"/about"} onClick={() => setToggle(!toggle)}>
-                    About
-                  </NavLink>
-                </li>
-                <li className="flex justify-center p-2">
-                  <NavLink to={"/contact"} onClick={() => setToggle(!toggle)}>
-                    Contact
-                  </NavLink>
-                </li>
-                <li className="flex justify-center p-2">
-                  <NavLink to={"/service"} onClick={() => setToggle(!toggle)}>
-                    Service
-                  </NavLink>
-                </li>
-                <li className="flex justify-center p-2">
-                  <NavLink to={"/galery"} onClick={() => setToggle(!toggle)}>
-                    Gallery
-                  </NavLink>
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <div className="absolute lg:hidden">
-            <button>
-              <GiHamburgerMenu
-                className="fixed top-5 right-2 text-2xl"
-                onClick={() => setToggle(!toggle)}
-              />
-            </button>
+                    ? "text-blue-600 font-medium"
+                    : "text-gray-600 hover:text-blue-500"
+                }`
+              }
+            >
+              Contact
+            </NavLink>
+          </div>
+
+          <button
+            className="lg:hidden text-gray-600 hover:text-blue-600 transition-colors duration-200"
+            onClick={() => setToggle(!toggle)}
+          >
+            <GiHamburgerMenu className="text-2xl" />
+          </button>
+        </div>
+
+        <div
+          className={`lg:hidden transition-all duration-300 ease-in-out ${
+            toggle ? "max-h-64 opacity-100" : "max-h-0 opacity-0"
+          } overflow-hidden`}
+        >
+          <div className="py-2 space-y-2">
+            <NavLink
+              to="/about"
+              className="block text-center py-2 text-gray-600 hover:text-blue-600 transition-colors duration-200"
+              onClick={() => setToggle(false)}
+            >
+              About
+            </NavLink>
+            <NavLink
+              to="/service"
+              className="block text-center py-2 text-gray-600 hover:text-blue-600 transition-colors duration-200"
+              onClick={() => setToggle(false)}
+            >
+              Service
+            </NavLink>
+            <NavLink
+              to="/galery"
+              className="block text-center py-2 text-gray-600 hover:text-blue-600 transition-colors duration-200"
+              onClick={() => setToggle(false)}
+            >
+              Gallery
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className="block text-center py-2 text-gray-600 hover:text-blue-600 transition-colors duration-200"
+              onClick={() => setToggle(false)}
+            >
+              Contact
+            </NavLink>
           </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 }
 
