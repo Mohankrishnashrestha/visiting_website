@@ -41,8 +41,10 @@ const services = [
 
 function Services() {
   return (
-    <div className="max-w-6xl mx-auto py-12 px-6">
-      <h2 className="text-4xl font-bold text-center mb-8">Our Services</h2>
+    <div className="max-w-6xl mx-auto py-12 px-6 ">
+      <h2 className="text-4xl font-bold text-center mt-10 mb-8">
+        Our Services
+      </h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service, index) => (
           <div key={index} className="bg-white rounded-lg shadow-lg p-4">

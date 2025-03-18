@@ -44,7 +44,7 @@ function Home() {
             className="w-full h-[50vh] lg:h-[100vh] object-cover rounded-lg transition-all duration-1000"
           />
           <div
-            className="absolute inset-0 flex flex-col p-2 justify-center text-white"
+            className="absolute inset-0 flex flex-col justify-center text-white "
             style={{
               background:
                 "linear-gradient(180deg, rgba(93,85,85,0.5) 8%, rgba(106,104,104,0.5) 23%, rgba(203,148,148,0.5) 44%, rgba(195,166,166,0.5) 61%, rgba(135,113,113,1) 78%, rgba(52,52,52,1) 100%)",
