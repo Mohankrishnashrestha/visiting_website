@@ -4,12 +4,14 @@ function About() {
   return (
     <div>
       <div className="h-50 w-full bg-gradient-to-b from-blue-600/60 to-blue-700/70 flex justify-center items-center mt-16">
-        <h2 className="text-white text-4xl font-bold uppercase tracking-wider">
+        <h2 className=" text-white text-4xl font-bold uppercase tracking-wider">
           About
         </h2>
       </div>
       <div className="max-w-6xl mx-auto text-justify p-4 shadow">
-        <div className="text-4xl mb-4 font-bold">Pokhara</div>
+        <div className="flex items-center justify-center text-4xl mb-8 font-bold mt-15">
+          Pokhara
+        </div>
 
         <img
           src="/public/images/pokhara/pokhara.jpg"

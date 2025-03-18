@@ -44,7 +44,7 @@ function Services() {
     <>
       <div className="h-50 w-full bg-gradient-to-b from-blue-600/60 to-blue-700/70 flex justify-center items-center mt-16">
         <h2 className="text-white text-4xl font-bold uppercase tracking-wider">
-          Services
+          Our Services
         </h2>
       </div>
       <div className="max-w-6xl mx-auto py-12 px-6 ">

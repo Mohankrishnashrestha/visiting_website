@@ -22,7 +22,6 @@ function Home() {
     }, 3000);
 
     return () => clearInterval(interval);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => {
     AOS.init({
@@ -134,7 +133,7 @@ function Home() {
       <div>
         <section className="h-[50px]"></section>
         <div className="max-w-6xl mx-auto">
-          <h2 className="lg:text-4xl text-2xl font-bold">
+          <h2 className="flex justify-center items-center lg:text-4xl text-2xl font-bold">
             Activity That Can Be Done In Pokhara
           </h2>
           <div className="p-2">
