@@ -11,15 +11,21 @@ const images = data.map((item) => ({
 
 function Gallery() {
   return (
-    <div>
-      <section className="h-[90px] lg:h-[80px]" />
-
-      <div className="bg-[#00000063] h-40 w-screen flex justify-center items-center">
-        <h2 className="text-white text-2xl">Gallery</h2>
+    <div className="min-h-screen bg-gray-100">
+      <div className="h-50 w-full bg-gradient-to-b from-blue-600/60 to-blue-700/70 flex justify-center items-center mt-16">
+        <h2 className="text-white text-4xl font-bold uppercase tracking-wider">
+          Gallery
+        </h2>
       </div>
-
-      <div className="p-5">
-        <ImageGallery items={images} />
+      <div className="max-w-7xl mx-auto my-8 px-4">
+        <ImageGallery
+          items={images}
+          showPlayButton={true}
+          showFullscreenButton={true}
+          showNav={true}
+          showBullets={true}
+          autoPlay={true}
+        />
       </div>
     </div>
   );

@@ -35,8 +35,7 @@ function Home() {
   }, []);
   return (
     <div>
-      <section className="h-[80px]" />
-      <div className="w-ful">
+      <div className="w-ful mt-16">
         <div className="relative">
           <img
             src={images[index]}
@@ -80,7 +79,7 @@ function Home() {
                   <li
                     key={index}
                     data-aos="fade-up"
-                    className="flex flex-col items-center gap-4 shadow-2xl p-5 rounded-2xl"
+                    className="flex flex-col items-center gap-4 shadow shadow-gray-200 hover:shadow-gray-400 p-5 rounded-2xl"
                   >
                     <h1 className="text-2xl hover:text-[#6494fd]">
                       {users.title}
@@ -144,7 +143,7 @@ function Home() {
                 <li
                   key={index}
                   data-aos="fade-up"
-                  className="shadow p-2 flex flex-col items-center gap-5 py-5 rounded-2xl"
+                  className="shadow shadow-gray-200 hover:shadow-gray-400 p-2 flex flex-col items-center gap-5 py-5 rounded-2xl"
                 >
                   <h1 className="lg:text-[20px] font-medium p-2  flex items-start ">
                     {item.title}
@@ -156,7 +155,7 @@ function Home() {
                       className="w-full h-full object-cover rounded transition-transform duration-300 group-hover:scale-115 group-hover:shadow-2xl"
                     />
                   </div>
-                  <p className="px-4 shadow py-2">{item.description}</p>
+                  <p className="px-4  py-2">{item.description}</p>
                 </li>
               ))}
             </ul>
